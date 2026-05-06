@@ -15,7 +15,7 @@ A personal "About Me" website with multiple pages, custom styling, and embedded 
 ![Index Bottom](about-julia/photos/indexlast.png)
 
 ### About
-![About](photos/about.png)
+![About](about-julia/photos/about.png)
 
 ### Contact Details
 ![Contact Details](about-julia/photos/contact.png)
