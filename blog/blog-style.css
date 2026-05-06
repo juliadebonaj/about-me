@@ -1,0 +1,332 @@
+/* Aqui altera todos os elementos, margem 0, "preenchimento" 0, tamanho da "caixa" border-box (considera o padding e a margin que definimos) */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Definindo estilo do body */
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; /* Fonte da Apple, não vai aparecer em Android/Windows/Linux*/
+      background-color: #efc0cc;
+      display: flex; /* Ativa o flexbox, torna o conteúdo todo "flexível" */
+      flex-direction: column; /* Posiciona o conteúdo em colunas, possivelmente por conta do menu lateral */
+      min-height: 100vh;
+    }
+
+    /* Definindo o estilo do nosso header */
+    header {
+      background-color: #f5dfe6;
+      color: #554448;
+      text-align: center; /* Alinha o texto no centro */
+      padding: 20px;
+      gap: 20px;
+    }
+
+    header h1 {
+      font-size: 2rem; /* Define o tamanho da fonte do H1 no header */
+    }
+
+    /* Barra de navegação do topo */
+    nav {
+      background-color: white;
+      color: #554448;
+      display: flex; /* Tornando nossa barra de navegação um elemento flexível */
+      justify-content: center; /* Conteúdo no centro */
+      gap: 20px; /* Espaço entre os elementos */
+      padding: 12px;
+    }
+
+    /* Define o estilo dos links contidos nas referência a href */
+    nav a { 
+      color:#554448;
+      text-decoration: none;
+      font-weight: 600; /* Define o quão cheinha nossa fonte é */
+    }
+
+    /* Colocando um efeito de cor de hover nos links a href */
+    nav a:hover {
+      color: #efc0cc;
+    }
+
+    /* Estilo do conteúdo principal */
+    main {
+      flex: 1; /* Tome todo o espaço que sobrar dos outros elementos */
+    } 
+
+    /* Define o como o conteúdo do blog irá ser disposto */
+    .content-area {
+      display: flex; /* Tornando nosso conteúdo um elemento "flexível" */
+      gap: 20px; /* Espaçamento entre cards e newsletter */
+      max-width: 1100px; /* Define o quanto da largura total de tela o conteúdo irá tomar */
+      margin: 40px auto 40px; /* Top, left & right, bottom: 40 em cima/embaixo, automática nos lados (o que faz o conteu1do ficar centralizado aqui) */
+      padding: 0 20px; /* Top & bottom, left & right: 0 padding em cima/embaixo, 20px de padding nos lados */
+    }
+
+    /* Define o estilo dos posts/cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      flex: 1;
+      align-items: start;
+    }
+
+    /* Newsletter sidebar */
+    .newsletter {
+      width: 260px; /* Largura fixa, indicando o que sobra ali pro flex: 1 */
+      flex-shrink: 0; /* "Não me encolha, respeite meu tamanho" */
+      background-color: white;
+      border-radius: 8px; /* Definindo os cantinhos arredondados da nossa borda */
+      overflow: hidden; /* Esconde os cantos da imagem que vazariam pra fora da nossa caixinha */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Offset x, offset y, blur, color */
+      text-align: center; /* Alinha o texto no centro da nossa newsletter */
+      display: flex; /* Torna tudo dentro de newsletter um elemento flexível */
+      flex-direction: column; /* A imagem fica junto em coluna com o texto */
+    }
+
+    /* Definindo o estilo da imagem em newsletter */
+    .newsletter img {
+      width: 100%; /* Ocupe toda a largura! */
+      flex: 1; /* Toma o tamanho que resta do texto */
+      object-fit: cover; /* Para não distorcer a imagem */
+    }
+
+    /* Definindo o estilo do texto em newsletter */
+    .newsletter-body {
+      padding: 20px; /* Padding de 20px no body inteiro */
+    }
+
+    /* Estilo do h3 em newsletter */
+    .newsletter-body h3 {
+      color: #554448;
+      margin-bottom: 8px; /* Margem entre h3 e p */
+    }
+
+    /* Parágrafo de newsletter */
+    .newsletter-body p {
+      font-size: 0.85rem; /* Tamanho da fonte do texto em p, rem é raw html, não muda nem se o usuário aumentar a fonte da página inteira */
+      color: #888;
+      margin-bottom: 15px; /* Margem entre p e inputs */
+    }
+
+    /* Inputs de newsletter */
+    .newsletter-body input {
+      width: 100%; /* Ocupe todo o espaço que tiver, respeite só o padding definido acima */
+      padding: 8px 10px; /* Top & bottom. left & right */
+      border: 1px solid #ddd; /* Borda colorida de 1px */
+      border-radius: 5px; /* Arredondamento dos cantinhos */
+      margin-bottom: 10px; /* Margem embaixo de cada um, distância entre um e outro, e outro e próximo elemento */
+      font-size: 0.85rem; /* Tamanho da fonte do texto em p, rem é raw html, não muda nem se o usuário aumentar a fonte da página inteira */
+    }
+
+    /* Botão da newsletter */
+    .newsletter-body button {
+      width: 100%; /* Ocupa todo o espaço disponível, respeitando o padding */
+      padding: 9px; /* Padding de 9px em todo o botão */
+      background-color: #efc0cc;
+      color:#554448;
+      border: none; /* Sem borda */
+      border-radius: 5px; /* Arredondamento dos cantinhos */
+      cursor: pointer; /* Muda o curso quando passa pelo botão */
+      font-size: 0.9rem; /* Tamanho da fonte do texto em p, rem é raw html, não muda nem se o usuário aumentar a fonte da página inteira */
+    }
+
+    /* Hover no botão da newsletter */
+    .newsletter-body button:hover {
+      background-color: #f5dfe6; /* Só mudamos a cor */
+    }
+
+    /* Definindo o estilo de nossos cards */
+    .card {
+      background-color: white;
+      border-radius: 8px; /* Arredondamento da borda */
+      padding: 20px; /* Padding de 20px em todo o card */
+      text-align: center; /* Texto alinhado no centro do card */
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1); /* Offset x, offset y, blur, color */
+    }
+
+    /* Definindo estilo do título do card */
+    .card h3 {
+      margin: 10px 0 5px; /* Top, left & right, bottom */
+      color: #554448;
+    }
+
+    /* Definindo estilo do parágrafo do texto */
+    .card p {
+      font-size: 0.9rem; /* Tamanho da fonte do texto em p, rem é raw html, não muda nem se o usuário aumentar a fonte da página inteira */
+      color: #554448;
+    }
+
+    .card img {
+      width: 200px; /* Largura fixa de 200px */
+      height: 220px; /* Altura fixa de 250px */
+      object-fit: cover; /* Não distorce a imagem */
+    }
+
+    /* About page */
+    .about {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .about h2 {
+      color: #554448;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .about img {
+      width: 100%;
+      height: 300px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      object-fit: cover;
+    }
+
+    .about p {
+      color: #554448;
+      font-size: 0.95rem;
+      line-height: 1.7;
+      margin-bottom: 15px;
+    }
+
+    /* Privacy page */
+    .privacy {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    .privacy h2 {
+      color: #554448;
+      font-size: 1.5rem;
+      margin-bottom: 20px;
+    }
+
+    .privacy h3 {
+      color: #554448;
+      font-size: 1rem;
+      margin-top: 20px;
+      margin-bottom: 8px;
+    }
+
+    .privacy p {
+      color: #888;
+      font-size: 0.9rem;
+      line-height: 1.7;
+    }
+
+    .privacy a {
+      color: #efc0cc;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    .privacy a:hover {
+      color: #c195a0;
+    }
+
+    /* Contact page */
+    .contact {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      padding: 40px;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+
+    .contact h2 {
+      color: #554448;
+      font-size: 1.5rem;
+      margin-bottom: 10px;
+    }
+
+    .contact p {
+      color: #888;
+      font-size: 0.9rem;
+      margin-bottom: 20px;
+    }
+
+    .contact form {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .contact input,
+    .contact textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 0.85rem;
+      font-family: inherit;
+    }
+
+    .contact textarea {
+      resize: vertical;
+    }
+
+    .contact button {
+      width: 100%;
+      padding: 10px;
+      background-color: #efc0cc;
+      color: #554448;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+
+    .contact button:hover {
+      background-color: #f5dfe6;
+    }
+
+    /* Footer */
+    footer {
+      background-color:white;
+      color:#554448;
+      text-align: center; /* Alinha o texto no centro */
+      padding: 5px 20px 20px; /* Padding de 5px no topo, 20px no restante */
+    }
+
+    /* Estilizando as tags de navegação do footer */
+    footer nav {
+      margin-bottom: 10px; /* Margem de 20px entre nav e p */
+    }
+
+    /* Estilizando o parágrafo do footer */
+    footer p {
+      font-size: 0.7rem; /* Tamanho da fonte do texto em p, rem é raw html, não muda nem se o usuário aumentar a fonte da página inteira */
+    }
+
+    /* Media queries pra ajustar o conteúdo a outros dispositivos */
+    @media (max-width: 900px) {
+      .content-area {
+        flex-direction: column; /* Cards (como um conjunto) e newsletter exibidos empilhados verticalmente */
+      }
+      .newsletter {
+        width: 100%; /* Ocupe a largura toda*/
+      }
+    }
+    
+    @media (max-width: 700px) {
+      .cards {
+        grid-template-columns: repeat(2, 1fr); /* Mudam de 3 colunas para 2 colunas */
+      }
+    }
+
+    @media (max-width: 450px) {
+      .cards {
+        grid-template-columns: 1fr; /* Uma coluna só */
+      }
+    }
