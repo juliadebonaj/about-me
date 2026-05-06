@@ -1,14 +1,14 @@
 # About Júlia
 
-A personal "About Me" website with multiple pages, custom styling, and embedded media.
+Um site pessoal de apresentação com múltiplas páginas, estilo customizado e mídia incorporada.
 
-## Pages
+## Páginas
 
-- **Index** — Who is Júlia? Cards with personal info, books, music artists, cats and hobbies
-- **About** — Notebook-style bio with a photo sidebar
-- **Contact Details** — GitHub, LinkedIn, email and social media links
+- **Index** — Quem é a Júlia? Cards com informações pessoais, livros, artistas musicais, pets e hobbies
+- **About** — Bio em estilo caderno com foto lateral
+- **Contact Details** — Links para GitHub, LinkedIn, email e redes sociais
 
-## Screenshots
+## Capturas de Tela
 
 ### Index
 ![Index Top](photos/indexfirst.png)
@@ -24,7 +24,7 @@ A personal "About Me" website with multiple pages, custom styling, and embedded 
 
 - HTML
 - CSS (Flexbox, Grid, Media Queries, Custom Fonts)
-- Apple Music embeds
+- Embeds do Apple Music
 
 ## Como rodar
 
