@@ -22,7 +22,7 @@ A personal "About Me" website with multiple pages, custom styling, and embedded 
 
 ## Tecnologias
 
-- HTML5
+- HTML
 - CSS (Flexbox, Grid, Media Queries, Custom Fonts)
 - Apple Music embeds
 
