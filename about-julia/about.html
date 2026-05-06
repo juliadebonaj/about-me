@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Me - Index</title>
+
+        <style>
+
+            @font-face {
+                font-family: 'Baby Doll';
+                src: url('font/BabyDoll.otf') format('opentype');
+            }
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Baby Doll';
+                background-color: #fff5f8;
+                display: flex;
+                flex-direction: column;
+                min-height: 100vh;
+                color: #554448;
+            }
+
+            header {
+                background-color: #efc0cc;
+                width: 100%;
+                text-align: center;
+                padding: 15px;
+                margin-bottom: 20px;
+                align-self: center;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+
+            header p {
+                font-size: 1.1rem;
+                margin-top: 10px;
+            }
+
+            nav {
+                display: flex;
+                justify-content: center;
+                align-self: center;
+                gap: 30px;
+                padding: 10px;
+                background-color:#efc0cc;
+                width: 180px;
+                border-radius: 10px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+            }
+
+            nav a {
+                font-size: 0.9rem;
+                text-decoration: none;
+                font-weight: 600;
+                color: #554448;
+                opacity: 100%;
+            }
+
+            nav a:hover {
+                color: #c195a0;
+            }
+
+            main {
+                flex: 1;
+            } 
+
+            .content-area {
+                display: flex;
+                align-items: flex-start;
+                gap: 20px;
+                max-width: 1100px;
+                margin: 30px auto 40px;
+                padding: 0 20px;
+                flex-direction: column;
+            }
+
+            .content-area h2 {
+                align-self: flex-start;
+                color:#554448;
+            }
+
+            .notebook {
+                background-color: white;                                                              
+                background-image: repeating-linear-gradient(                                          
+                    transparent,                                                                      
+                    transparent 31px,                                                                 
+                    #efc0cc 31px,                                                                     
+                    #efc0cc 32px);                                                                                    
+                line-height: 32px;                                                                    
+                padding: 8px 20px;                                                                    
+                border-radius: 8px;                                                                   
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                width: 100%;                                               
+            }   
+
+            .notebook h3, .notebook p {
+                line-height: 32px;
+                margin: 0;
+                padding: 0;
+            }
+
+            .content-row {
+                display: flex;
+                align-items: stretch;
+                gap: 20px;
+                width: 100%;
+            }
+
+            aside {
+                width: 260px;
+                flex-shrink: 0;
+                border-radius: 8px;
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .sidecard {
+                width: 100%;
+                height: 100%;
+                background-color: white;
+                border-radius: 8px;
+                box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+                overflow: hidden;
+            }
+
+            .sidecard img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            footer {
+                text-align: center;
+                padding: 5px 20px 20px;
+            }
+
+            footer p {
+                font-size: 0.7rem;
+            }
+
+            footer nav {
+                width: 10%;
+                background-color: #efc0cc;
+                border-radius: 8px;
+                margin: 0 auto 20px;
+            }
+        
+        </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>About Me</h1>
+            <p>Júlia de Bona Jankus</p>
+        </header>
+
+        <nav>
+            <a href='index.html'>Index</a>
+            <a href="#">About</a>
+        </nav>
+
+        <main>
+            <section class="content-area">
+                <h2>Notes:</h2>
+                <div class="content-row">
+                    <div class="notebook">
+                        <h3>About Juju</h3>
+                        <br>
+                        <p>Júlia is a 25 year old woman, partially blonde partially brunette, <br>
+                        she is currently enrolled in an internship at SAP, <br>
+                        her team is a front-end development team. <br>
+                        <br>
+                        Júlia is already graduated in Systems Analysis and Development,<br>
+                        she is pursuing her second graduation in Internet Systems<br>
+                        and also pursuing a post graduate degree in User Experience.<br>
+                        <br>
+                        Júlia has an older sister and two older brothers,<br>
+                        her sister is 32 years old, and her brothers are 37 and 46.<br>
+                        Júlia's mother had her when she was around 44 years old,<br>
+                        her dad was 45 years old.<br>
+                        <br>
+                        Júlia has two cats, one called Boo and the another called Nala,<br>
+                        Boo is 10 years old while Nala is 7 years old.<br>
+                        Boo is Júlia's dearest sweetheart and is always around her,<br>
+                        Nala stays closer to Júlia's mother usually, <br>
+                        she loves bothering Júlia, but she's equally cute <br>
+                        and lovely, the household baby.<br>
+                        <br>
+                        </p>
+                    </div>
+
+                    <aside>
+                        <iframe
+                        allow="autoplay *; encrypted-media *;"
+                        frameborder="0" height="200"
+                        style="width:100%;max-width:660px;overflow:hidden;background:transparent;margin-bottom: 20px;"
+                        sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-storage-access-by-user-activation allow-top-navigation-by-user-activation"
+                        src="https://embed.music.apple.com/br/album/you-love-me/1058955830?i=1058957393&autoplay=1">
+                        </iframe>
+
+                        <div class="sidecard">
+                            <img src="photos/mirrorme.JPG" alt="Júlia from head to toe"/>
+                        </div>
+                    </aside>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <nav>
+                <a href="contact-details.html">Contact Details</a>
+            </nav>
+            <p>&copy; 2026 About Me - Todos os direitos reservados</p>
+        </footer>
+
+    </body>
+</html> 
