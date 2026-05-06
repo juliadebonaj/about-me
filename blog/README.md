@@ -25,7 +25,7 @@ Blog de beleza e moda com curadoria de conteúdo em Skincare, Maquiagem, Cabelos
 ![Maquiagem](photos/maquiagem.png)
 
 ### Cabelos
-![Cabelos](photos/cabelos.png)
+![Cabelos](photos/cabelo.png)
 
 ### Moda
 ![Moda](photos/moda.png)
